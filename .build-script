@@ -1,0 +1,2 @@
+npm install
+node node_modules/.bin/webpack

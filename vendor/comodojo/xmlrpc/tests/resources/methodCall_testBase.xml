@@ -1,0 +1,15 @@
+<methodCall>
+<methodName>test.base</methodName>
+<params>
+<param>
+<value>
+<string>jhon</string>
+</value>
+</param>
+<param>
+<value>
+<base64>Y2lhbw==</base64>
+</value>
+</param>
+</params>
+</methodCall>

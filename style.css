@@ -1,0 +1,126 @@
+* {
+	box-sizing: border-box;
+}
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 15px;
+	line-height: 1.5;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#app {
+	width: 600px;
+	margin: 2rem auto;
+}
+
+header {
+	text-align: center;
+}
+
+header svg {
+	height: 60px;
+}
+header svg:first-child {
+	margin-right: 0.5rem;
+}
+
+.steps {
+	display: flex;
+	overflow-x: hidden;
+}
+.steps > * {
+	width: 100%;
+	padding: 0 1rem;
+	flex-shrink: 0;
+	flex-grow: 0;
+
+	transition: transform 300ms;
+}
+
+.steps.step-1 > * { transform: translate3D(-100%, 0, 0); }
+.steps.step-2 > * { transform: translate3D(-200%, 0, 0); }
+.steps.step-3 > * { transform: translate3D(-300%, 0, 0); }
+.steps.step-4 > * { transform: translate3D(-400%, 0, 0); }
+
+h2 {
+	font-weight: normal;
+	text-align: center;
+}
+
+h2 .step {
+	text-transform: uppercase;
+	color: #cbcdce;
+}
+
+.pr-list {
+	height: 300px;
+	overflow: auto;
+	list-style-type: none;
+
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.pr-list li {
+	border: 1px solid #e5e5e5;
+	border-radius: 3px;
+	margin-bottom: 0.5rem;
+	padding: 0.4rem;
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.pr-list .number {
+	color: #a0a5aa;
+}
+
+.preview {
+	border: 0.2rem solid #f7f7f7;
+	overflow-x: scroll;
+	padding: 0.3rem;
+	max-height: 500px;
+}
+
+label {
+	display: flex;
+	margin: 0.7rem 0;
+}
+
+label > span {
+	font-weight: bold;
+	width: 150px;
+}
+
+label > input {
+	flex-grow: 1;
+}
+
+.actions {
+	display: flex;
+	justify-content: space-between;
+}
+
+.actions button {
+	color: #fff;
+	background: #00a0d2;
+	border: 0;
+
+	cursor: pointer;
+	cursor: hand;
+
+	font-size: 1rem;
+	padding: 0.5rem 1rem;
+	border-radius: 3px;
+}
+
+.actions button:hover {
+	background: #0073aa;
+}

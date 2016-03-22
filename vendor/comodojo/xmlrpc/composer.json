@@ -1,0 +1,36 @@
+{
+    "name": "comodojo/xmlrpc",
+    "description": "Yet another php xmlrpc decoder/encoder",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "xmlrpc",
+        "encoder",
+        "decoder",
+        "comodojo"
+    ],
+    "homepage": "http://comodojo.org",
+     "support": {
+        "issues": "https://github.com/comodojo/xmlrpc/issues"
+    },
+    "authors": [
+        {
+            "name": "Marco Giovinazzi",
+            "email": "marco.giovinazzi@comodojo.org",
+            "homepage": "http://jme.altervista.org"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Comodojo\\Xmlrpc\\": "src"
+        }
+    },
+    "require": {
+        "php": ">=5.1.3",
+        "comodojo/exceptions": "@stable"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0",
+        "scrutinizer/ocular": "~1.1"
+    }
+}
