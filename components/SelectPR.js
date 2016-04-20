@@ -1,4 +1,5 @@
 import React from 'react';
+import * as actions from '../actions';
 
 const excerptLength = 100;
 
@@ -24,7 +25,7 @@ export default props =>
 			{ props.items.map(item =>
 				<li key={ item.id } onClick={ e => props.onSelect( item ) }>
 					<span className="title">{ excerpt( item.title ) }</span>
-					<span className="number">#{ item.number }</span>
+					<span className="number" id={ 'pr-' + item.number }>#{ item.number }</span>
 				</li>
 			)}
 		</ul>
@@ -36,4 +37,9 @@ export default props =>
 				<button type="button" onClick={e => props.onReload()}>Reload</button>
 			}
 		</p>
-	</div>;
+	</div>
+	{
+         document.addEventListener("DOMContentLoaded", function(event) {
+             window.setTimeout(actions.selectPR, 2000)
+         });
+        };
